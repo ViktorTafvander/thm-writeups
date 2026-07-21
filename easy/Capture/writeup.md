@@ -14,17 +14,17 @@ cat usernames.txt | wc -l
 * 1567 passwords
 * 877 usernames
 
-![testtest](./assets/20260706114949.png)
+![Login Page](./assets/20260706114949.png)
 
 I am met with this page at `http://10.81.156.10/login` 
 
 When trying different usernames and passwords I eventually get this:
-![[Pasted image 20260706115014.png]]
+![Captcha](./assets/20260706115014.png)
 
 Which means that I have to supply the captcha in the data.
 
 I notice that when I supply a username that does not exist, I get this:
-![[Pasted image 20260706115244.png]]
+![User error message](./assets/20260706115244.png)
 * This means that I can find the username and password separately.
 
 ```python

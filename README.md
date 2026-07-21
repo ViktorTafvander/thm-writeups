@@ -11,10 +11,6 @@ My writeups for [TryHackMe](https://tryhackme.com) rooms, organized by difficult
 |------|-----------|------|------|
 | — | — | — | — |
 
-<!-- Add entries like:
-| [Room Name](./easy/room-name/writeup.md) | Easy | `web` `privesc` | [THM](https://tryhackme.com/room/room-name) |
--->
-
 ## Structure
 
 ```
@@ -24,15 +20,3 @@ hard/       — Hard difficulty rooms
 ```
 
 Each room has its own folder with a `writeup.md` and an `assets/` directory for screenshots.
-
-## Tools
-
-- nmap, gobuster, feroxbuster
-- burpsuite, ffuf
-- linpeas, winpeas
-- john, hashcat
-- metasploit, searchsploit
-
-## Disclaimer
-
-These writeups are for educational purposes. Please attempt rooms yourself before reading solutions.

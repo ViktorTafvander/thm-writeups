@@ -14,7 +14,7 @@ cat usernames.txt | wc -l
 * 1567 passwords
 * 877 usernames
 
-![testtest](<./assets/20260706114949.png)
+![testtest](./assets/20260706114949.png)
 
 I am met with this page at `http://10.81.156.10/login` 
 

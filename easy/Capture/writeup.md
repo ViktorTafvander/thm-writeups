@@ -19,6 +19,7 @@ When trying different usernames and passwords I eventually get this:
 Which means that I have to supply the captcha in the data.
 
 I notice that when I supply a username that does not exist, I get this:
+
 ![User error message](./assets/20260706115244.png)
 * This means that I can find the username and password separately.
 

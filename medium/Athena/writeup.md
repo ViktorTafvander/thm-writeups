@@ -78,6 +78,7 @@ nmblookup -A 10.82.184.5
 * `-A` performs a reverse lookup (IP to NetBIOS name) 
 
 ![temp](assets/20260720095344.png)
+
 We get the hostname `SAMBA`.
 
 nbtscan scans a target IP to retrieve NetBIOS name information, including hostname and MAC address.

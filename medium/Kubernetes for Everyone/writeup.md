@@ -280,14 +280,23 @@ Yuup!
 ```bash
 k0s kubectl exec -it -n kube-system kube-api -- /bin/bash
 ```
-This creates 
-
 
 To open an interactive shell session within a container, I can use the `-i` (stdin) and `-t` (tty) flags.
 
+After not finding anything for a while I find that the pods are in sub-directories in `/var/lib/containerd`.
+
+I go to `/var/lib/k0s/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/38/fs/home/ubuntu/jokes` and find several files with jokes, also a `.git` folder. So I start looking at git commits and eventually:
+
 ```bash
 git show <commit-id>
+```
+Gives me the flag: THM{`<REDACTED>`}
 
+
+
+
+
+```bash
 k0s kubectl get pods -n internship internship-job-5drbm
 ```
 

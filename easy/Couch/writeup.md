@@ -96,19 +96,7 @@ I get a bunch of these:
 
 ![temp](assets/20260706135443.png)
 
-```text
-══╣ EC2 Security Credentials (T1552.005,T1580)
-{                                                                                                                                                           
-  "Code" : "Success",
-  "LastUpdated" : "2026-07-06T11:42:56Z",
-  "Type" : "AWS-HMAC",
-  "AccessKeyId" : "ASIA2YR2KKQMQKR4B2UA",
-  "SecretAccessKey" : "inS8vR6ZPmdb6R82f2poas+CElWBcEcCByXJmyfe",
-  "Token" : "IQoJb3JpZ2luX2VjEIz//////////wEaCWV1LXdlc3QtMSJIMEYCIQDqUx/ibWiEA/isidJTL1lmtISDDBZU+yra9EvCsXCSLAIhAMmCvuQvT31LrbaPjwOeR9juMB7817nR6gwvPW+VXV71KsYECFUQAxoMNzM5OTMwNDI4NDQxIgxEF2AMjViUPg1wzMYqowS3XpVED4RrkUedX9YUxNWF5nu6GO8I1urtB6DXuATX0ySR4Hz0KVQ8uKDYcRrJ0LUZbltNwHG52S6VLsLlLgMEQ0JerMX3eaH3zW700JZcFffnXLOpwjrFsjkiX5SL7ZjQbVf4ULImXMZih0kjDqkMxfpgO0LHAXIVj4nwHQne7H5sXr5IwkyrBMZ1pqQ9CYA2fnSpaxx19RgZl4h55W+Eqrau8NhXIIZEPl3Yl3WXE3y1e0d5lE3Yp4Klr+ZbmjIlGwtk4P++2Q93h/7rY7sKp9d8krH9r49BWBwuCeoFnkKBd9otidym9qQHjc0vNHHZldI6CPZV+rZAjL7MT6FlQiykyTYo2pqGY1rtyn/uWD5bCRLEbC3VWOY/DCERI+DSJ5axzWc4ch8qmhGgrfFyUndauIZHkRVoQiWkQe92RfZHZnUPAk5vOT2xTUKhBsFH32JbdlpyCP9Aqg3HaMIGRhrztSboYTNbQLLAWwLI8jmEaaXTKz2C8qJlmD4bCdoXJN6RznIBqMDwIlHa9hMAct2aXGlXgZjpblNx+j8PRCxCAX7hyGF550KCFZwJnqMZRcR83kAiQANl3Qg6qFEZRXnLrTzqRe/a0xsV5vB/aDK0LBlfyUp7ygKQDUfSx+DMLMR1TTLvj/35Pl4mJx7/lDRhYh4pWJmJ+T6/OMkh03zHLWW5Ioze8BvVHSkeE7ph7Cuyb+6b2hSu+JrtQvBKscmeMMyprtIGOpIC/+T6tYL33+MFgXYWhrN9K62RCDTMzY0fSfX3ZBcAaCpquyWU1ssVNBHzxLGvqiFPmd/PnnIVqSxWq5qRSKJxy1CKJItOVqxmLmufski5ahjJNiHzk/gyCQ41dgStPreGXQgD8jlEcpTaJTGXCehzf1+oNgG9Xr0Tnggo4NoKm84ahTxFoEvM6LvmOA0FyBm4i5m6iKgUH2MVad/Fm2ut7Lt8tgjNzvW4AlBGwjLxZzlzWqf8o9E9gNxY00keP/mAR+4Ich0zAqt1ovm3Iuq1ILtGZVd00yQMsTs+2MosXEtIBZzyGh+Kh1PTMcqt8ngPU47BzfNwjzE7kRI3dUrusnOT9qfSCwQHE894vUwgVl6GdA==",
-  "Expiration" : "2026-07-06T17:55:00Z"
-}
 
-```
 
 ![temp](assets/20260706135639.png)
 

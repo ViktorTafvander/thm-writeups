@@ -333,8 +333,8 @@ This is so cool!
 
 ```bash
 cat /home/athena/user.txt && cat /root/root.txt
-857c4a4fbac638afb6c7ee45eb3e1a28
-aecd4a3497cd2ec4bc71a2315030bd48
+857c<REDACTED>e1a28
+aecd<REDACTED>0bd48
 ```
 
 

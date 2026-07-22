@@ -35,6 +35,12 @@ SHUUUUUUUUUUUUURDA!
 | Dreaming | Easy | Web🌐, Database🗄️ | [Dreaming](./easy/Dreaming/writeup.md) |
 | Jax Sucks alot... | Easy | Web🌐 | [Jax Sucks alot...](./easy/Jax%20Sucks%20alot.../writeup.md) |
 | Valley | Easy | Web🌐, Network Analysis📡, Reverse Engineering⚙️  | [Valley](./easy/Valley/writeup.md) |
+| SQLi Intro | Easy | Database🗄️,  SQLi💉 | [SQLi Intro](./easy/SQL%20Injection%20(SQLi)/writeup.md) |
+| Guided Pentest (Infrastructure) | Easy | Application📝 | [Guided Pentest](./easy/Guided%20Pentest%20(Infrastructure)/writeup.md) |
+| Guided Pentest (Web) | Easy | Web🌐 | [Guided Pentest (Web)](./easy/Guided%20Pentest%20(Web)/writeup.md) |
+| Brute It | Easy | Web🌐 | [Brute It](./easy/BruteIt/writeup.md) |
+| Cat Pictures 2 | Easy | Web🌐 | [Cat Pictures 2](./easy/Cat%20Pictures%202/writeup.md) |
+
 
 
 ## Structure

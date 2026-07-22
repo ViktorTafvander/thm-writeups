@@ -54,8 +54,11 @@ ansible runner (olivetin): port 1337
 ```
 
 I log into GiTea and find the commit "add flag":
+
 ![temp](assets/20260717094620.png)
+
 ![temp](assets/20260717094634.png)
+
 ```flag
 10d916<REDACTED>146bb5
 ```

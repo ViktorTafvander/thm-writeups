@@ -1,4 +1,15 @@
-# <img src="https://cdn-images.tryhackme.com/room-icons/53d3c28c1af197142685ceb238d5ce3c.png" width="200" height="200"> Athena
+<div align="center">
+
+<img src="https://cdn-images.tryhackme.com/room-icons/53d3c28c1af197142685ceb238d5ce3c.png" width="150">
+
+# Athena
+
+**Difficulty:** Medium    
+**Category:** Samba & Reverse engineering
+
+</div>
+
+---
 
 ![temp](assets/20260720092048.png)
 

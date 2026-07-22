@@ -1,4 +1,15 @@
-# Capture  <img src="./assets/4b631e191c14bc9d6b2be078d1adde76.png" width="100" height="100">
+<div align="center">
+
+<img src=".//assets/4b631e191c14bc9d6b2be078d1adde76.png" width="150">
+
+# Capture
+
+**Difficulty:** Easy    
+**Category:** Web
+
+</div>
+
+---
 
 I get the files `usernames.txt` and `passwords.txt`
 * Strong hints towards brute forcing
@@ -8,12 +19,13 @@ cat passwords.txt | wc -l
 > 1567
 
 cat usernames.txt | wc -l
-> 877
+> 877<div align="center">
 ```
 ![Login Page](./assets/20260706114949.png)
 
 I am met with this page at `http://10.81.156.10/login` 
 When trying different usernames and passwords I eventually get this:
+
 ![Captcha](./assets/20260706115014.png)
 
 Which means that I have to supply the captcha in the data.
@@ -21,6 +33,7 @@ Which means that I have to supply the captcha in the data.
 I notice that when I supply a username that does not exist, I get this:
 
 ![User error message](./assets/20260706115244.png)
+
 * This means that I can find the username and password separately.
 
 Testing for users with a hardcoded password:
@@ -157,6 +170,6 @@ natalie:sk8board
 
 ```html
 <h2>Flag.txt:</h2>
-<h3>7df2eabce36f02ca8ed7f237f77ea416</h3>
+<h3>7df2ea<REDACTED>f77ea416</h3>
 ```
 

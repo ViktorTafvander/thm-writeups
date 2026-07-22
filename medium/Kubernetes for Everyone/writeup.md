@@ -239,8 +239,8 @@ Two secrets!
 ![temp](assets/20260702160641.png)
 
 ```bash
-echo "VEhNe3llc190aGVyZV8kc19ub18kZWNyZXR9" | base64 -d
-> THM{yes_there_$s_no_$ecret}
+echo "VEh<REDACTED>WNyZXR9" | base64 -d
+> THM{yes<REDACTED>ecret}
 ```
 
 ```bash
@@ -293,8 +293,8 @@ k0s kubectl get pods -n internship internship-job-5drbm
 
 ![temp](assets/20260702164448.png)
 
-https://crackstation.net
+https://crackstation.net gives:
+ch`<redacted>`ori!
 
-chidori!
 # K0s
 * Only has the Linux Kernel as dependency, making installation and upgrades very easy.

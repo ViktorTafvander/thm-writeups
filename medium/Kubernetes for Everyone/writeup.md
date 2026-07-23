@@ -126,6 +126,8 @@ KimCE3yMk08MxczdWJ2Y
 
 I CANT GET THIS TO WORK
 
+After a little while I looked at different stuff and found the grafana version vulnerability. So this was a dead end.
+
 # Port 3000 GRAFANA
 
 

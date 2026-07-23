@@ -24,11 +24,11 @@ SHUUUUUUUUUUUUURDA!
 
 | Room | Difficulty | Tags | Link |
 |------|-----------|------|------|
-| Event Horizon | Hard | Network Analysis📡, OSINT | [Event Horizon](./hard/Event%20Horizon/writeup.md) |
+| Event Horizon | Hard | Network Analysis📡, OSINT🌍 | [Event Horizon](./hard/Event%20Horizon/writeup.md) |
 | Athena | Medium | Samba📁, Reverse Engineering⚙️  | [Athena](./medium/Athena/writeup.md) |
 |  BasicMalwareRE | Medium | Reverse Engineering⚙️| [BasicMalwareRE](./medium/BasicMalware/writeup.md)
-| Frand and Herby try Again... | Medium | Kubernetes☸️, Cloud☁️  | [Frank and Herby](./medium/Frank%20and%20Herby%20try%20again%20.../writeup.md)
-| Kubernetes for Everyone | Medium | Kubernetes☸️, Cloud☁️ | [Kubernetes for Everyone](./medium/Kubernetes%20for%20Everyone/writeup.md)
+| Frand and Herby try Again... | Medium | Kubernetes☸️, Docker🐳, Cloud☁️,   | [Frank and Herby](./medium/Frank%20and%20Herby%20try%20again%20.../writeup.md)
+| Kubernetes for Everyone | Medium | Kubernetes☸️, Docker🐳, Cloud☁️ | [Kubernetes for Everyone](./medium/Kubernetes%20for%20Everyone/writeup.md)
 | SQHell | Medium | SQLi💉 | [SQHell](./medium/SQHell/writeup.md) |
 | WhyHackMe | Medium | Web🌐, Network Analysis📡  | [WhyHackMe](./medium/WhyHackMe/writeup.md)
 | Capture | Easy | Web🌐 | [Capture](./easy/Capture/writeup.md) |

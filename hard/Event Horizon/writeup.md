@@ -46,7 +46,7 @@ RCPT TO:<dom.mark@eventhorizon.thm>
 DATA
 354 OK, send.
 ```
-Cyberchef, from base64: `dG9tLmRvbUBldmVudGhvcml6b24udGht` & `cGFzc3dvcmQ` gives me:
+Cyberchef, from base64: `dG9tLmRvbUBldmVudGhvcml6b24udGht` & `cGFzc3dvcmQ=` gives me:
 
 `tom.dom@e<REDACTED>word`
 
@@ -379,6 +379,13 @@ After all of this is done, data can be exchanged.
 
 So when the infected agent sends the first 4 bytes which the C2 appends 4 additional bytes to and sends back. When this all comes back and the infected agent decrypts it, if the first 4 bytes are the same as it had sent back, it is confirmed that the C2 and the infected agent uses the same key for encrypting and decrypting. 
 
+
+**The flow:**
+* Agent -> C2: RSA pubkey (encrypted w/ SetupAESKey)
+* C2 -> Agent: SessionKey (encrypted w/ RSA pubkey)
+* Mutual verification -> encrypted coms
+
+
 **What do we need to decrypt the traffic?**
 
 * The data traffic of Covenant extracted from a network capture and stored in a seperate file. 
@@ -463,7 +470,9 @@ Still base64 packet not found.
 
 This stream is before the one I tried with earlier, so it should be correct, does it have a different modulus and private key? It shouldnt?
 
-BRUH, the thing I was missing was a `=` at the end of the B64 blob. Isn't this just padding????
+
+**BRUH, the thing I was missing was a `=` at the end of the B64 blob. Isn't this just padding???? It got left out when copying from wireshark, this can be seen in the image, it is not selected!**
+
 
 We got a new AES key now:
 
@@ -497,7 +506,7 @@ We still have a large blob string as `"status":"2","output":"loooooooooooooong s
 
 We know from earlier that when the type is set to 2 the entire verification is done and actual data can be sent. So this blob must be data of some sort. In fact, we have a last blob with `"status":"3"` aswell?
 
-We take the blob from status 2 into cyberchef and see this:
+We take the blob from status 2 into cyberchef and see this: 
 
 ![temp](assets/20260723111010.png)
 

@@ -11,7 +11,6 @@ fl4gm4n
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
 └─$ which fl4gm4n
 /in/ur/pc
-
 ```
 
 <p align="center">
@@ -69,6 +68,7 @@ SHUUUUUUUUUUUUURDA!
 easy/       — Easy difficulty rooms
 medium/     — Medium difficulty rooms
 hard/       — Hard difficulty rooms
+THM{th4nks_f0r_read1ng}
 ```
 
 ---

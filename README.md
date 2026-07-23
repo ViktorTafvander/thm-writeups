@@ -24,6 +24,7 @@ SHUUUUUUUUUUUUURDA!
 
 | Room | Difficulty | Tags | Link |
 |------|-----------|------|------|
+| Event Horizon | Hard | Network Analysis📡, OSINT | [Event Horizon](./hard/Event%20Horizon/writeup.md) |
 | Athena | Medium | Samba📁, Reverse Engineering⚙️  | [Athena](./medium/Athena/writeup.md) |
 |  BasicMalwareRE | Medium | Reverse Engineering⚙️| [BasicMalwareRE](./medium/BasicMalware/writeup.md)
 | Frand and Herby try Again... | Medium | Kubernetes☸️, Cloud☁️  | [Frank and Herby](./medium/Frank%20and%20Herby%20try%20again%20.../writeup.md)

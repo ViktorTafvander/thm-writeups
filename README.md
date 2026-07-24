@@ -1,6 +1,6 @@
 # TryHackMe Writeups 🏴‍☠️
 
-![Rooms](https://img.shields.io/badge/rooms-18-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+![Rooms](https://img.shields.io/badge/rooms-19-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
 
 ```bash
@@ -22,7 +22,7 @@ SHUUUUUUUUUUUUURDA!
 ## Rooms
 
 <details open>
-<summary>🟢 Easy (11 rooms)</summary>
+<summary>🟢 Easy (12 rooms)</summary>
 
 | Room | Tags | Link |
 |------|------|------|
@@ -35,6 +35,7 @@ SHUUUUUUUUUUUUURDA!
 | Guided Pentest (Web) | Web🌐 | [Writeup](./easy/Guided%20Pentest%20(Web)/writeup.md) |
 | Jax Sucks alot... | Web🌐 | [Writeup](./easy/Jax%20Sucks%20alot.../writeup.md) |
 | Kenobi | Samba📁, FTP📂 | [Writeup](./easy/Kenobi/writeup.md) |
+| RootMe | Web🌐 | [Writeup](./easy/RootMe/writeup.md) |
 | SQLi Intro | Database🗄️, SQLi💉 | [Writeup](./easy/SQL%20Injection%20(SQLi)/writeup.md) |
 | Valley | Web🌐, Network Analysis📡, Reverse Engineering⚙️ | [Writeup](./easy/Valley/writeup.md) |
 

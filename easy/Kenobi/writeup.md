@@ -1,15 +1,14 @@
-
 <div align="center">
 
 <img src="https://cdn-images.tryhackme.com/room-icons/46f437a95b1de43238c290a9c416c8d4.png" width="150">
-<br>
+
 # Kenobi
-<br>
+
 **Difficulty:** Easy
-<br>
 **Category:** Samba, FTP, Mount
 
 </div>
+
 ---
 
 

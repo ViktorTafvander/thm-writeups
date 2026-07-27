@@ -203,6 +203,17 @@ Thats what I was looking for!
 **What method of attack could allow us to authenticate as the user without the password?** 
 `Pass the hash`
 
+`Pass the hash` worked here because **Windows NTML authentication** didn't require the plaintext password - Only the hash itself is used to prove identity.
+
+When I authenticate to NTLM (which WinRM supports), the protocol works like this:
+1. Server sends a challenge (random nonce)
+2. Client encrypts the challenge using the NTLM hash as the key
+3. Server verifies the response against its stored hash
+
+At no point is the actual password needed - the hash is the credential. 
+
+The reason for `Pass the hash` working here is because NTLM authentication is allowed, it is not restricted to Kerberos-only. (Which it should be).
+ 
 **Using a tool called Evil-WinRM what options will allow us to use a hash?**
 `-H`.
 
@@ -221,3 +232,14 @@ TryHackMe{<REDACTED>}
 type C:\Users\svc-admin\Desktop\user.txt.txt
 TryHackMe{<REDACTED>}
 ```
+
+# Attack Chain
+
+1. Nmap scan to find services and domain name
+2. Enumerate registered users with Kerbrute and a user-list
+3. Find a user that has `UF_DONT_REQUIRE_PREAUTH` set.
+4. Get the Kerberos hash of that user & crack it with hashcat.
+5. Enumerate SMB shares with the new user & find creds for backup user.
+6. Use backup user to perform a DCSync attack and gain the Administrator NTLM hash.
+7. Use `pass the hash` to authenticate with the administrator hash with Evil-WinRM.
+8. Obtain full control over the machine & domain.

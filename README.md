@@ -1,24 +1,13 @@
 # TryHackMe Writeups 🏴‍☠️
-
-<p align="center">
-<a href="https://tryhackme.com/p/fl4gm4n">
-<img src="https://tryhackme-badges.s3.amazonaws.com/fl4gm4n.png" alt="TryHackMe Profile">
-</a>
-</p>
-
 ![Rooms](https://img.shields.io/badge/rooms-20-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
-
-<div align="center">
-<img src="https://cdn-images.tryhackme.com/user-avatars/65ec6711a5903262ab69f957-1740060204528" width="150">
-</div>
-
-[My THM Profile](https://tryhackme.com/p/fl4gm4n)
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
 └─$ whoami
-fl4gm4n 
-
+fl4gm4n  
+```
+[My THM Profile](https://tryhackme.com/p/fl4gm4n)
+```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
 └─$ which fl4gm4n
 /in/ur/pc

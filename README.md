@@ -1,5 +1,16 @@
 # TryHackMe Writeups 🏴‍☠️
+<<<<<<< HEAD
 ![Rooms](https://img.shields.io/badge/rooms-20-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+=======
+
+<p align="center">
+<a href="https://tryhackme.com/p/fl4gm4n">
+<img src="https://tryhackme-badges.s3.amazonaws.com/fl4gm4n.png" alt="TryHackMe Profile">
+</a>
+</p>
+
+![Rooms](https://img.shields.io/badge/rooms-21-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+>>>>>>> f625d1d (Added Snacktive Directory :))
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
@@ -43,10 +54,11 @@ SHUUUUUUUUUUUUURDA!
 </details>
 
 <details open>
-<summary>🟠 Medium (7 rooms)</summary>
+<summary>🟠 Medium (8 rooms)</summary>
 
 | Room | Tags | Link |
 |------|------|------|
+| Attacktive Directory | AD🏢, Kerberos🔑, SMB📁 | [Writeup](./medium/Attacktive%20Directory/writeup.md) |
 | Athena | Samba📁, Reverse Engineering⚙️ | [Writeup](./medium/Athena/writeup.md) |
 | BasicMalwareRE | Reverse Engineering⚙️ | [Writeup](./medium/BasicMalware/writeup.md) |
 | Frank and Herby try Again... | Kubernetes☸️, Docker🐳, Cloud☁️ | [Writeup](./medium/Frank%20and%20Herby%20try%20again%20.../writeup.md) |

@@ -2,8 +2,10 @@
 
 ![Rooms](https://img.shields.io/badge/rooms-20-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
-![Profile Pic](https://cdn-images.tryhackme.com/user-avatars/65ec6711a5903262ab69f957-1740060204528)[My THM Profile](https://tryhackme.com/p/fl4gm4n)
-
+<div align="center">
+<img src="https://cdn-images.tryhackme.com/user-avatars/65ec6711a5903262ab69f957-1740060204528" width="150">
+[My THM Profile](https://tryhackme.com/p/fl4gm4n)
+</div>
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
 └─$ whoami

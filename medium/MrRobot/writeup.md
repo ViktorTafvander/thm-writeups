@@ -54,7 +54,7 @@ By looking through the directories found from the fuzzing I find this in `robots
 Going to that URL gives me the first key:
 
 ```
-073403c8a58a1f80d943455fb30724b9
+073403c8<REDACTED>fb30724b9
 ```
 
 We also find the file `fsocity.dic` which is a wordlist of known "phrases" or "tags" from the show. This can be used for the brute forcing, both username and password?
@@ -157,7 +157,7 @@ Now I can ssh as `robot`
 ssh robot@10.80.134.87
 # pwd abcdefghijklmnopqrstuvwxyz
 cat /home/robot/key-2-of-3.txt
-822c73956184f694993bede3eb39f959
+822<REDACTED>b39f959
 ```
 
 
@@ -206,5 +206,5 @@ Hah, najs!
 
 ```bash
 cat /root/key-3-of-3.txt
-04787ddef27c3dee1ee161b21670b4e4
+04787dd<REDACTED>21670b4e4
 ```

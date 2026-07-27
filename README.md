@@ -1,6 +1,6 @@
 # TryHackMe Writeups 🏴‍☠️
 
-![Rooms](https://img.shields.io/badge/rooms-19-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+![Rooms](https://img.shields.io/badge/rooms-20-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
 
 ```bash
@@ -42,7 +42,7 @@ SHUUUUUUUUUUUUURDA!
 </details>
 
 <details open>
-<summary>🟠 Medium (6 rooms)</summary>
+<summary>🟠 Medium (7 rooms)</summary>
 
 | Room | Tags | Link |
 |------|------|------|
@@ -50,6 +50,7 @@ SHUUUUUUUUUUUUURDA!
 | BasicMalwareRE | Reverse Engineering⚙️ | [Writeup](./medium/BasicMalware/writeup.md) |
 | Frank and Herby try Again... | Kubernetes☸️, Docker🐳, Cloud☁️ | [Writeup](./medium/Frank%20and%20Herby%20try%20again%20.../writeup.md) |
 | Kubernetes for Everyone | Kubernetes☸️, Docker🐳, Cloud☁️ | [Writeup](./medium/Kubernetes%20for%20Everyone/writeup.md) |
+| MrRobot | Web🌐, Priv Esc🔓 | [Writeup](./medium/MrRobot/writeup.md) |
 | SQHell | SQLi💉 | [Writeup](./medium/SQHell/writeup.md) |
 | WhyHackMe | Web🌐, Network Analysis📡 | [Writeup](./medium/WhyHackMe/writeup.md) |
 

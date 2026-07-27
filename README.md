@@ -4,8 +4,10 @@
 
 <div align="center">
 <img src="https://cdn-images.tryhackme.com/user-avatars/65ec6711a5903262ab69f957-1740060204528" width="150">
-[My THM Profile](https://tryhackme.com/p/fl4gm4n)
 </div>
+
+[My THM Profile](https://tryhackme.com/p/fl4gm4n)
+
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
 └─$ whoami

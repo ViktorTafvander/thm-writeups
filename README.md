@@ -2,6 +2,7 @@
 
 ![Rooms](https://img.shields.io/badge/rooms-20-blue)![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green)![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python)![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
+![My THM Profile](https://tryhackme.com/p/fl4gm4n)
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]

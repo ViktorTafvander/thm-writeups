@@ -6,7 +6,7 @@
 </a>
 </p>
 
-![Rooms](https://img.shields.io/badge/rooms-21-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+![Rooms](https://img.shields.io/badge/rooms-22-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
@@ -66,11 +66,12 @@ SHUUUUUUUUUUUUURDA!
 </details>
 
 <details open>
-<summary>🔴 Hard (1 room)</summary>
+<summary>🔴 Hard (2 room)</summary>
 
 | Room | Tags | Link |
 |------|------|------|
 | Event Horizon | Network Analysis📡, OSINT🌍 | [Writeup](./hard/Event%20Horizon/writeup.md) |
+| Directory | Network Analysis📡, Kerberos🔑 | [Writeup](./hard/Directory/writeup.md) | 
 
 </details>
 

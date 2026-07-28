@@ -1,5 +1,4 @@
 # TryHackMe Writeups 🏴‍☠️
-=======
 
 <p align="center">
 <a href="https://tryhackme.com/p/fl4gm4n">

@@ -1,12 +1,11 @@
 # TryHackMe Writeups 🏴‍☠️
 
 <p align="center">
-<a href="https://tryhackme.com/p/fl4gm4n">
-<img src="https://tryhackme-badges.s3.amazonaws.com/fl4gm4n.png" alt="TryHackMe Profile">
 </a>
 </p>
 
-![Rooms](https://img.shields.io/badge/rooms-22-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux) ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
+![Rooms](https://img.shields.io/badge/rooms-23-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)
+ ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
@@ -30,7 +29,7 @@ SHUUUUUUUUUUUUURDA!
 ## Rooms
 
 <details open>
-<summary>🟢 Easy (12 rooms)</summary>
+<summary>🟢 Easy (13 rooms)</summary>
 
 | Room | Tags | Link |
 |------|------|------|
@@ -46,6 +45,7 @@ SHUUUUUUUUUUUUURDA!
 | RootMe | Web🌐 | [Writeup](./easy/RootMe/writeup.md) |
 | SQLi Intro | Database🗄️, SQLi💉 | [Writeup](./easy/SQL%20Injection%20(SQLi)/writeup.md) |
 | Valley | Web🌐, Network Analysis📡, Reverse Engineering⚙️ | [Writeup](./easy/Valley/writeup.md) |
+| VulnNet: Roast | Samba📂 | [Writeup](./easy/VulnNet%20Roasted/writeup.md) |
 
 </details>
 

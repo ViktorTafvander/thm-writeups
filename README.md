@@ -45,7 +45,7 @@ SHUUUUUUUUUUUUURDA!
 | RootMe | Web🌐 | [Writeup](./easy/RootMe/writeup.md) |
 | SQLi Intro | Database🗄️, SQLi💉 | [Writeup](./easy/SQL%20Injection%20(SQLi)/writeup.md) |
 | Valley | Web🌐, Network Analysis📡, Reverse Engineering⚙️ | [Writeup](./easy/Valley/writeup.md) |
-| VulnNet: Roast | Samba📂 | [Writeup](./easy/VulnNet%20Roasted/writeup.md) |
+| VulnNet: Roast | AD🏢, Kerberos🔑, SMB📁 | [Writeup](./easy/VulnNet%20Roasted/writeup.md) |
 
 </details>
 

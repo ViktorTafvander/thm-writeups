@@ -4,7 +4,7 @@
 </a>
 </p>
 
-![Rooms](https://img.shields.io/badge/rooms-23-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-July%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)
+![Rooms](https://img.shields.io/badge/rooms-30-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-August%202026-green) ![Linux](https://img.shields.io/badge/Linux-Expert-black?logo=linux)
  ![Python](https://img.shields.io/badge/Python-Scripting-yellow?logo=python) ![Burp](https://img.shields.io/badge/BurpSuite-Web%20Testing-orange)
 
 ```bash
@@ -75,12 +75,28 @@ SHUUUUUUUUUUUUURDA!
 
 </details>
 
+<details open>
+<summary>🎄 Hacker Holidays (7 rooms)</summary>
+
+| Room | Tags | Link |
+|------|------|------|
+| Day 1 - The Concierge Knows Too Much | AI🤖, Prompt Injection💬 | [Writeup](./hackerholidays/Day%201%20(The%20Concierge%20Knows%20Too%20Much)/writeup.md) |
+| Day 2 - Room 404 | Web🌐, Directory Enumeration🔍 | [Writeup](./hackerholidays/Day%202%20(Room%20404)/writeup.md) |
+| Day 3 - Complimentary | Cloud☁️, AWS🟠, IAM Misconfiguration🔓 | [Writeup](./hackerholidays/Day%203%20(Complimentary)/writeup.md) |
+| Day 4 - Packed Light | Network Forensics📡, PCAP Analysis🦈, Cryptography🔐 | [Writeup](./hackerholidays/Day%204%20(Packed%20Light)/writeup.md) |
+| Day 5 - Beach Bar | Web🌐, Boot2Root💻 | [Writeup](./hackerholidays/Day%205%20(Beach%20Bar)/writeup.md) |
+| Day 6 - Overheard at Breakfast | OSINT🌍, Social Media📱, Hashing#️⃣ | [Writeup](./hackerholidays/Day%206%20(Overheard%20at%20Breakfast)/writeup.md) |
+| Day 7 - Do Not Disturb | Web🌐, Boot2Root💻 | [Writeup](./hackerholidays/Day%207%20(Do%20Not%20Disturb)/writeup.md) |
+
+</details>
+
 ## Structure
 
 ```
-easy/       — Easy difficulty rooms
-medium/     — Medium difficulty rooms
-hard/       — Hard difficulty rooms
+easy/            — Easy difficulty rooms
+medium/          — Medium difficulty rooms
+hard/            — Hard difficulty rooms
+hackerholidays/  — Seasonal Hacker Holidays event (no difficulty ratings)
 THM{th4nks_f0r_read1ng}
 ```
 

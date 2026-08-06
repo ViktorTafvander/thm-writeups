@@ -1,4 +1,13 @@
+<div align="center">
+<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5f9c7574e201fe31dad228fc-1785686770292&w=128&q=75" width="150">
+
+# Packed Light
+
 #NetworkForensics #PCAPAnalysis #Cryptography
+
+</div>
+
+---
 
 We get a zip archive which contains a `PCAP` file.
 

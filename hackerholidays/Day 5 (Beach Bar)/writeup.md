@@ -1,4 +1,14 @@
+<div align="center">
+<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785328070219&w=128&q=75" width="150">
+
+# Beach Bar
+
 #Web #Boot2Root
+
+</div>
+
+---
+
 
 ```bash
 nmap -sV -sC 10.113.183.42 -oN nmap.txt
@@ -34,6 +44,7 @@ I try to import this playlist:
 ```yaml
 playlist:
   name: test
+
 ```
 And I can view it:
 ![temp](assets/20260806143951.png)

@@ -1,4 +1,13 @@
+<div align="center">
+<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5e9c5d0148cf664325c8a075-1785513932052&w=128&q=75" width="150">
+
+# Room 404
+
 #Web #DirectoryEnumeration
+</div>
+
+---
+
 
 ```bash
 nmap -sV -sC 10.113.165.72 -oN nmap.txt

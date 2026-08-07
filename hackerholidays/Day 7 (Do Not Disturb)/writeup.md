@@ -1,14 +1,3 @@
-<div align="center">
-<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251618019&w=128&q=75" width="150">
-
-# Do Not Disturb
-
-#Web #Boot2Root
-
-</div>
-
----
-
 
 ```bash
 nmap -sV -sC 10.82.132.27 -oN nmap.txt               

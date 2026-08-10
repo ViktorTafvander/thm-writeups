@@ -4,7 +4,7 @@
 </a>
 </p>
 
-![Rooms](https://img.shields.io/badge/rooms-31-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-August%202026-green)
+![Rooms](https://img.shields.io/badge/rooms-32-blue) ![Last Updated](https://img.shields.io/badge/last%20updated-August%202026-green)
 
 ```bash
 ┌──(fl4gm4n㉿kali)-[~/THM/flags]
@@ -86,7 +86,8 @@ SHUUUUUUUUUUUUURDA!
 | Day 5 - Beach Bar | Web🌐, Boot2Root💻 | [Writeup](./hackerholidays/Day%205%20(Beach%20Bar)/writeup.md) |
 | Day 6 - Overheard at Breakfast | OSINT🌍, Social Media📱, Hashing#️⃣ | [Writeup](./hackerholidays/Day%206%20(Overheard%20at%20Breakfast)/writeup.md) |
 | Day 7 - Do Not Disturb | Web🌐, Boot2Root💻 | [Writeup](./hackerholidays/Day%207%20(Do%20Not%20Disturb)/writeup.md) |
-| Day 8 - Towel on the Sunbed | Web🌐, Burp Suite :) | [Writeup](./hackerholidays/Day%208%20(Towel%20on%20the%20Sunbed)/writeup.md)
+| Day 8 - Towel on the Sunbed | Web🌐, Burp Suite :) | [Writeup](./hackerholidays/Day%208%20(Towel%20on%20the%20Sunbed)/writeup.md) |
+| Day 9 - CryptoCabana | Cloud☁️, Azure, Storage | [Writeup](./hackerholidays/Day%209%20(CryptoCabana)/writeup.md) |
 
 </details>
 

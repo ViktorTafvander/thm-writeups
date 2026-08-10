@@ -115,7 +115,7 @@ Can I place the python code inside the `hooks` directory?
 
 **ZIP & SLIP** -attack!
 
-By using `../../../...` I can navigate the filesystem when unzipping the zip file.
+By using `../../../...` I can navigate the filesystem when unzipping the zip file. I notice how my shell gets uploaded to the relative path `shells/string/my_shell`. So if I use 2 `../` I will enter the root directory where the `hooks` directory hopefully is.
 
 I write this `createShell.py` script:
 * payload from revshells.com

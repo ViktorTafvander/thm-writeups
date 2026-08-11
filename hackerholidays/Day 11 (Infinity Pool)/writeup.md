@@ -114,6 +114,7 @@ Target (client machine):
 ```
 
 On my attacker machine `http://localhost:9090/ucp/`.
+
 ![temp](assets/20260811093840.png)
 
 I log in with the credentials above:
@@ -160,6 +161,7 @@ I now use feroxbuster against my `localhost:9090`:
 ```bash
 feroxbuster http://localhost:9090
 ```
+
 ![temp](assets/20260811102241.png)
 
 I find `/jobs/export` with the error code 405 (Method not allowed). So I have to POST to it?
